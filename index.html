@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <div class="container"></div>
+    <h2 class="logo">ioco</h2>
+    <h5 class="shoaib">Shoaib Muhammad</h5>
+    <h1 class="main-heading">Creating a <br>Biocomputer</h1>
+    <button class="btn" id="mybtn">Explore More</button>
+    <!--<div class="date">
+        <h2>07/16</h2>
+    </div> -->
+    <span
+        style="font-size:25px;cursor:pointer; display: inline-block; position: absolute; right: 40px; color: white; top: 32px;"
+        onclick="openNav()" id="">&#9776;</span>
+
+    <section>
+        <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+            <source src="./assets/headphones.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+
+        let mybtn = document.getElementById("mybtn");
+
+        mybtn.addEventListener("hover", () => {
+            mybtn.innerHTML = "Click Me";
+        });
+
+    </script>
+</body>
+
+</html>
